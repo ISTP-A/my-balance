@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #3366ff;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #181818;
+  --color-secondary-foreground: #181818;
+  /* --color-muted: #888; */
+  --color-muted-foreground: #818181;
+  --color-border: #888;
+}
+
+@layer components {
+  .text-head {
+    @apply text-2xl;
+  }
+  .text-subhead {
+    @apply text-xl;
+  }
+  .text-caption {
+    @apply text-sm;
+  }
+  .text-label {
+    @apply text-base font-semibold;
+  }
+}
